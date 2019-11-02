@@ -1,0 +1,26 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="HelloWorldArtifact">
+    <output-path>$PROJECT_DIR$/out/artifacts/HelloWorldArtifact</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Servlet" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="servlet-api-2.5" />
+          <element id="dir-copy" path="$PROJECT_DIR$/lib" />
+          <element id="library" level="project" name="com.google.code.gson:gson:2.8.0" />
+        </element>
+        <element id="file-copy" path="$PROJECT_DIR$/webapp/WEB-INF/web.xml" />
+      </element>
+      <element id="javaee-facet-resources" facet="Servlet/web/Web" />
+      <element id="file-copy" path="$PROJECT_DIR$/webapp/index.html" />
+      <element id="directory" name="js">
+        <element id="dir-copy" path="$PROJECT_DIR$/webapp/js" />
+      </element>
+      <element id="directory" name="css">
+        <element id="dir-copy" path="$PROJECT_DIR$/webapp/css" />
+      </element>
+    </root>
+  </artifact>
+</component>
