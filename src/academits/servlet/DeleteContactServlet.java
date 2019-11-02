@@ -16,8 +16,6 @@ public class DeleteContactServlet extends HttpServlet {
         if (stringId != null) {
             phoneBookService.deleteContact(Integer.parseInt(stringId));
             resp.setStatus(200);
-        } else {
-            resp.setStatus(404);
         }
     }
 }
